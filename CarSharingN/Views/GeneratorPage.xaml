@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarSharingN.Views.GeneratorPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="bg1.jpg"
+             Title="GeneratorPage">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label 
+            Text="CarSharing"
+            FontFamily="GrandHotel"
+            FontSize="35"
+            TextColor="AntiqueWhite"
+            Padding="6"
+            />
+            <Label Text="Pronađite svoj automobil!"
+                   FontSize="20"
+                   FontFamily="PlayfairDisplay"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Frame WidthRequest="360"
+                   HeightRequest="180"
+                   Padding="0"
+                   CornerRadius="0"
+                   Margin="0,0,0,10"
+            HorizontalOptions="Center">
+
+                <Grid RowSpacing="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"/>
+                        <RowDefinition Height="AUTO"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Gorivo:"
+                           TextColor="DimGray"
+                           FontSize="18"
+                           Margin="0,14,0,0"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           />
+
+                    <HorizontalStackLayout
+                        HorizontalOptions="CenterAndExpand"
+                        Spacing="10" Padding="6" Grid.Row="1">
+                        <Frame HorizontalOptions="Start" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Category1Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <Image Source="gorivo.jpg" HeightRequest="30"></Image>
+                                <Label Text="Dizel" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                        <Frame HorizontalOptions="End" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Category2Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <Image Source="gorivo.jpg" HeightRequest="30"></Image>
+                                <Label Text="Benzin" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                        <Frame HorizontalOptions="End" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Category3Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <Image Source="hibrid.jpg" HeightRequest="30"></Image>
+                                <Label Text="Hibrid" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- datum dostupnosti -->
+            <Frame WidthRequest="360"
+                   HeightRequest="120"
+                   Padding="12"
+                   CornerRadius="0"
+                   Margin="0,0,0,10"
+                   HorizontalOptions="Center">
+
+                <Grid RowSpacing="8" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"/>
+                        <RowDefinition Height="AUTO"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <HorizontalStackLayout  Grid.Row="1" HorizontalOptions="Start" Spacing="6">
+                        <VerticalStackLayout Spacing="6">
+                            <Label Text="Dostupan"
+                           TextColor="DimGray"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,0"/>
+                            <Frame  
+                               CornerRadius="10"
+                               HorizontalOptions="Start"
+                               BackgroundColor="White"
+                               WidthRequest="155"
+                               HeightRequest="45"
+                               Padding="0"
+                               BorderColor="Gray"
+                            >
+                                <DatePicker HorizontalOptions="CenterAndExpand"
+                                            x:Name="uneseniDatum"
+                                            MinimumDate="01/25/2023"
+                                            FontSize="17"
+                                            FontAttributes="Bold"
+                                            TextColor="DimGray"
+                                            Format="dd.M.yyyy.">
+                                </DatePicker>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Frame>
+
+            <!-- gorivo-->
+
+            <Frame WidthRequest="360"
+                   HeightRequest="70"
+                   Padding="12"
+                   CornerRadius="0"
+                   Margin="0,0,0,10"
+                   HorizontalOptions="Center">
+
+
+                <Picker x:Name="picker"
+                    
+                    Title="Odaberite tip vozila:"
+                        TextColor="DimGray"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           Margin="20,0,0,0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>SUV</x:String>
+                            <x:String>Limuzina</x:String>
+                            <x:String>Karavan</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Frame>
+
+            <!-- dodatna oprema -->
+
+            <Frame WidthRequest="360"
+                   HeightRequest="280"
+                   Padding="0"
+                   CornerRadius="0"
+                   Margin="0,0,0,10"
+                   HorizontalOptions="Center">
+
+                <Grid RowSpacing="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"/>
+                        <RowDefinition Height="AUTO"/>
+                        <RowDefinition Height="AUTO"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Dodatna oprema:"
+                           Grid.Row="0"
+                           TextColor="DimGray"
+                           FontSize="18"
+                           Margin="0,14,0,10"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           />
+
+                    <HorizontalStackLayout
+                        HorizontalOptions="CenterAndExpand"
+                        Spacing="10" Padding="6" Grid.Row="1">
+                        <Frame HorizontalOptions="Start" Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                            <VerticalStackLayout BackgroundColor="White">
+                                    <CheckBox Color="CornflowerBlue" x:Name="Activity1Checkbox" HorizontalOptions="Start"></CheckBox>
+                                    <Label Text="Navigacija" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                        <Frame  Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Activity2Checkbox" HorizontalOptions="Start"></CheckBox>
+                                 <Label Text="LED svjetla" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                        <Frame Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Activity3Checkbox" HorizontalOptions="Start"></CheckBox>
+                                 <Label Text="Android Auto" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout
+                        HorizontalOptions="CenterAndExpand"
+                        Spacing="10" Padding="6" Grid.Row="2">
+                        <Frame HorizontalOptions="Start" Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Activity4Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <Label Text="Apple Carplay" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                        <Frame  Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Activity5Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <Label Text="S-Line" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                        <Frame Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                            <VerticalStackLayout BackgroundColor="White">
+                                <CheckBox Color="CornflowerBlue" x:Name="Activity6Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <Image Source="skiing.png" HeightRequest="30"></Image>
+                                <Label Text="Nesto" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </HorizontalStackLayout>
+
+                </Grid>
+            </Frame>
+
+            <!-- udaljenost -->
+            <Frame WidthRequest="360"
+                   HeightRequest="130"
+                   CornerRadius="0"
+                   Margin="0,0,0,10"
+                   HorizontalOptions="Center"
+                   >
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="4">
+                    <Label Text="Maksimalna udaljenost (u km):"
+                           TextColor="DimGray"
+                           FontSize="18"
+                           Margin="0,0,0,10"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                    <Entry Placeholder="  Udaljenost"
+                       WidthRequest="300"
+                       BackgroundColor="#f1f1f1"
+                       TextColor="CornflowerBlue"
+                       FontSize="18"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Generate button -->
+            <Button Text="GO"
+                    FontSize="20"
+                    BackgroundColor="CornflowerBlue"
+                    WidthRequest="130"
+                    Margin="0,20,0,20"
+                    CornerRadius="40"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

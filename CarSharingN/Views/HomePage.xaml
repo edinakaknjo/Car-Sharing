@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:CarSharingN.ViewModels"
+             xmlns:Models="clr-namespace:CarSharingN.Models"
+             x:DataType="ViewModels:HomePageViewModel"
+             x:Class="CarSharingN.Views.HomePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="bg1.jpg"
+             Title="HomePage">
+    <Grid Padding="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="AUTO"/>
+        </Grid.RowDefinitions>
+
+        <!-- Explore trips -->
+        <HorizontalStackLayout>
+            <Label Text="Pronadjite svoj automobil" FontSize="26" FontAttributes="Bold" FontFamily="PlayfairDisplay"/>
+            <!-- <Label Text="automobil " FontSize="26" FontAttributes="Bold" FontFamily="PlayfairDisplay" TextColor="#32573c"/> -->
+        </HorizontalStackLayout>
+
+        <!-- Lists others have created -->
+        <Label Text="Dostupni:" Grid.Row="1" TextColor="DarkSlateGrey" FontSize="16"/>
+
+        <!-- Scrollable list of Trips -->
+        <CollectionView ItemsSource="{Binding Automobil}" 
+                        Grid.Row="2"
+                        Margin="0,18">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                                    ItemSpacing="20"/>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="Models:Automobil">
+                    <Border HeightRequest="200"
+                            Stroke="#9eb0a0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="1.6*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="{Binding ImageUrl}"
+                                   Aspect="AspectFill"/>
+
+                            <Grid Grid.Column="1" Padding="14" RowSpacing="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                    <RowDefinition Height="AUTO"/>
+                                </Grid.RowDefinitions>
+
+                                <!-- Name -->
+                                <Label Text="{Binding Name}" 
+                                       FontSize="21" FontFamily="PlayfairDisplay" FontAttributes="Bold"/>
+                                <!-- Category -->
+                                <Label Text="{Binding Category}"
+                                       FontSize="17"
+                                       TextColor="CornflowerBlue"
+                                       FontAttributes="Bold"
+                                       Grid.Row="1"/>
+                                <!-- Location -->
+                                <Label Text="{Binding Location}"
+                                       FontSize="15"
+                                       Grid.Row="2"/>
+                                <!-- Duration -->
+                                <Label Text="{Binding Duration}"
+                                       FontSize="16"
+                                       Margin="4,2,0,0"
+                                       Grid.Row="3"/>
+
+                                <Frame Padding="10" Grid.Row="4"
+                                                   Margin="0,12,0,0"
+                                       HorizontalOptions="Start"
+                                                   BorderColor="CornflowerBlue"
+                                                   BackgroundColor="#d5e3d9"
+                                      >
+                                    <Label Text="{Binding Description}"
+                                                       TextColor="CornflowerBlue"
+                                           FontSize="15"/>
+                                </Frame>
+                                <Button Grid.Row="4" HorizontalOptions="End"
+                                        Text="More" BackgroundColor="Black" TextColor="White"
+                                       
+                                        WidthRequest="50"
+                                        HeightRequest="50" FontSize="8"/>
+
+                            </Grid>
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+
+        </CollectionView>
+
+        <!-- Create New Trip button -->
+        <Button Text="Potrazite auto!" 
+                BackgroundColor="LightBlue"
+                Padding="10"
+                CornerRadius="30"
+                WidthRequest="180"
+                FontSize="14"
+                Grid.Row="3"
+                Clicked="Potrazite_Clicked"
+                />
+    </Grid>
+
+</ContentPage>

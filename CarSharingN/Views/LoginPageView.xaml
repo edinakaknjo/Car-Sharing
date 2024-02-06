@@ -1,0 +1,61 @@
+ <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarSharingN.Views.LoginPageView"
+             Shell.NavBarIsVisible="False"
+             Title="LoginPage"
+             BackgroundImageSource="bg1.jpg">
+    <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center"
+        Margin="0,70,0,0">
+
+
+        <VerticalStackLayout Spacing="5" Margin="0,0,0,60">
+            <Label Text="Dobrodošli!" FontSize="36" FontFamily="PlayfairDisplay" FontAttributes="Bold" TextColor="CornflowerBlue" HorizontalTextAlignment="Center" />
+            <Label Text="Prijavite se na svoj profil" FontSize="24" FontFamily="PlayfairDisplay" TextColor="CornflowerBlue" HorizontalTextAlignment="Center" />
+        </VerticalStackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28" BackgroundColor="#3300008B">
+                <Image Source="usera.png" HeightRequest="20" WidthRequest="20" />
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand" BackgroundColor="#3300008B">
+                <Entry x:Name="entryUsername" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Username" Keyboard="Email" Text="{Binding Email}" TextColor="White"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28" BackgroundColor="#3300008B">
+                <Image Source="pass.png" HeightRequest="20" WidthRequest="20" />
+            </Frame>
+            <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand" BackgroundColor="#3300008B">
+                <Entry x:Name="entrySifra" Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Password" IsPassword="True" Text="{Binding Password}" TextColor="white"/>
+            </Frame>
+        </StackLayout>
+
+
+        <Label Text="Zaboravili ste šifru?"
+               HorizontalOptions="End"
+               Margin="0,-22,6,0"
+               FontSize="14"
+               FontAttributes="Bold"
+               TextColor="DimGray"/>
+
+
+        <Button  Command="{Binding LoginCommand}" Text="Sign In" FontSize="16" WidthRequest="110" HeightRequest="44" BackgroundColor="CornflowerBlue" CornerRadius="20" HorizontalOptions="Center" />
+        <!--Clicked="Button_Clicked"-->
+
+        <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="Center">
+            <Label Text="Nemate profil?" TextColor="CornflowerBlue" />
+            <Button Text="Prijavite se ovdje" TextColor="CornflowerBlue" Margin="0,-6,0,0" FontAttributes="Bold" BackgroundColor="Transparent" 
+                    Padding="6" BorderColor="Transparent" />
+            <!--Clicked="SignUp_Clicked"-->
+        </StackLayout>
+
+
+        <StackLayout Orientation="Vertical" Margin="0,120,0,0">
+            <Button Text="Back" BackgroundColor="CornflowerBlue" WidthRequest="70" HorizontalOptions="Start" CornerRadius="20" Clicked="Button_Clicked_Back"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

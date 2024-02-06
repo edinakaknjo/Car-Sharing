@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarSharingN.Views.DetailsPage"
+             BackgroundImageSource="bg1.jpg"
+             Title="DetailsPage">
+    <VerticalStackLayout Padding="10"  VerticalOptions="StartAndExpand">
+        <Label x:Name="putovanjeName" FontAttributes="Bold" FontSize="40" Margin="0,10,0,20" TextColor="CornflowerBlue"/>
+        <Label x:Name="location" Margin="0,0,20,0" FontSize="25" FontAttributes="Italic,Bold"></Label>
+        <Label x:Name="category" Margin="0,0,20,0" FontAttributes="Italic" FontSize="20"></Label>
+        <Label x:Name="description"></Label>
+        <Image x:Name="ImageUrl"></Image>
+        <Label x:Name="dugiOpis"></Label>
+
+        <Button Text="Add to favorites" TextTransform="None" CornerRadius="20" BackgroundColor="CornflowerBlue" TextColor="White" MinimumWidthRequest="25" FontAttributes="Bold,Italic" FontSize="30" Clicked="Favorite_Clicked"></Button>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarSharingN.Views.ProfilePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="bg1.jpg"
+             Title="ProfilePage">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" 
+                  Padding="20,0">
+
+                <!-- Pozadina -->
+                <Frame Grid.Row="0" BorderColor="White" VerticalOptions="Start" HeightRequest="160" HasShadow="False" CornerRadius="20" Margin="0,45,0,20" Padding="0" IsClippedToBounds="True">
+                    <Image Source="iphotobg.jpg" Aspect="AspectFill"/>
+                </Frame>
+
+
+                <!-- Profilna slika -->
+                <Frame Grid.Row="1" Margin="0,-90,0,0" BorderColor="White" HorizontalOptions="Center" WidthRequest="110" HeightRequest="110" HasShadow="False" CornerRadius="55" Padding="0" IsClippedToBounds="True">
+                    <Image Source="genericavatar.png" Aspect="AspectFill"/>
+                </Frame>
+
+                <!-- Ime, ostali podaci -->
+                <Label x:Name="Ime" Grid.Row="2" FontAttributes="Bold" TextColor="#383b67" HorizontalTextAlignment="Center" Margin="0,10,0,0" FontSize="29"/>
+                
+                <Label Grid.Row="4" Text="Location" TextColor = "#9192b7" FontAttributes="Bold" FontSize="20" Margin="22,0,0,0"/>
+                <Label Grid.Row="5" x:Name="Lokacija" FontSize="19" TextColor="#9192b7"/>
+
+                <Button Grid.Row="4" ImageSource="location.png" WidthRequest="2" HeightRequest="2" CornerRadius="20" HorizontalOptions="Center" BackgroundColor="Transparent" Margin="0,-5,275,0"/>
+
+                <Button Grid.Row="8" ImageSource="mail.png" Margin="0,10,280,0" WidthRequest="2" HeightRequest="2" CornerRadius="9" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                <Label Grid.Row="8" Text="E-mail" TextColor = "#9192b7" FontAttributes="Bold" FontSize="20" Margin="22,10,0,0"/>
+                <Label x:Name="Email" Grid.Row="9"  FontSize="19" TextColor="#9192b7" Margin="0,0,0,20"/>
+
+                <Label Grid.Row ="14" Text="Active Status" FontSize="20" FontAttributes="Bold" TextColor="#9192b7" Margin="0,120,0,0"/>
+
+                <Switch Grid.Row="14" IsToggled="true" OnColor="DarkBlue"
+                ThumbColor="#829388" HorizontalOptions="End" Margin="0,75,10,0"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

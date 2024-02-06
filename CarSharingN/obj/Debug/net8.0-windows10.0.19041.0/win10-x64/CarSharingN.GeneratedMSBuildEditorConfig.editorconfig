@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CarSharingN
+build_property.ProjectDir = C:\Users\User\source\repos\CarSharingN\CarSharingN\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/DashboardView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.DashboardView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DashboardView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DashboardView.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/DetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.DetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetailsPage.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/GeneratorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.GeneratorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GeneratorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GeneratorPage.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/GroupsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.GroupsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\GroupsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\GroupsPage.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/IntroScreenView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.IntroScreenView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\IntroScreenView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\IntroScreenView.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/LoginPageView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.LoginPageView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPageView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPageView.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
