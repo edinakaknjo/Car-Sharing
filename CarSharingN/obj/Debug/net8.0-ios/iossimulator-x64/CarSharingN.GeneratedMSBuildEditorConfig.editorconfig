@@ -94,6 +94,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.Register
 build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
 
+[C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/ResultsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.ResultsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ResultsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ResultsPage.xaml
+
 [C:/Users/User/source/repos/CarSharingN/CarSharingN/Views/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CarSharingN.Views.SettingsPage.xaml

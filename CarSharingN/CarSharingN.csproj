@@ -66,6 +66,7 @@
 	  <None Remove="Resources\Images\iphotobg.jpg" />
 	  <None Remove="Resources\Images\location.png" />
 	  <None Remove="Resources\Images\mail.png" />
+	  <None Remove="Resources\Images\novasl.jpg" />
 	  <None Remove="Resources\Images\pass.png" />
 	  <None Remove="Resources\Images\profilew.png" />
 	  <None Remove="Resources\Images\sedan.JPG" />
@@ -76,6 +77,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Images\novasl.jpg" />
 	  <MauiImage Include="Resources\Images\assistantw.png" />
 	  <MauiImage Include="Resources\Images\bg1.jpg" />
 	  <MauiImage Include="Resources\Images\bg2.jpg" />
@@ -130,6 +132,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\RegisterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ResultsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SettingsPage.xaml">

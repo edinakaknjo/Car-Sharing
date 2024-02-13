@@ -48,23 +48,29 @@
                         Spacing="10" Padding="6" Grid.Row="1">
                         <Frame HorizontalOptions="Start" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
                             <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Category1Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <CheckBox Color="CornflowerBlue" x:Name="Category1Checkbox" HorizontalOptions="Start"
+                                CheckedChanged="CategoryCheckbox_CheckedChanged"
+                                BindingContext="DIZEL" />
                                 <Image Source="gorivo.jpg" HeightRequest="30"></Image>
-                                <Label Text="Dizel" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                                <Label Text="DIZEL" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
                             </VerticalStackLayout>
                         </Frame>
                         <Frame HorizontalOptions="End" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
                             <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Category2Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <CheckBox Color="CornflowerBlue" x:Name="Category2Checkbox" HorizontalOptions="Start"
+                                   CheckedChanged="CategoryCheckbox_CheckedChanged"
+                                    BindingContext="BENZIN" />
                                 <Image Source="gorivo.jpg" HeightRequest="30"></Image>
-                                <Label Text="Benzin" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                                <Label Text="BENZIN" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
                             </VerticalStackLayout>
                         </Frame>
                         <Frame HorizontalOptions="End" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
                             <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Category3Checkbox" HorizontalOptions="Start"></CheckBox>
+                                <CheckBox Color="CornflowerBlue" x:Name="Category3Checkbox" HorizontalOptions="Start"
+                                 CheckedChanged="CategoryCheckbox_CheckedChanged"
+                                    BindingContext="HIBRID" />
                                 <Image Source="hibrid.jpg" HeightRequest="30"></Image>
-                                <Label Text="Hibrid" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                                <Label Text="HIBRID" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
                             </VerticalStackLayout>
                         </Frame>
                     </HorizontalStackLayout>
@@ -121,55 +127,26 @@
                 </Grid>
             </Frame>
 
-            <!-- gorivo-->
+            <!-- tip auta-->
+
 
             <Frame WidthRequest="360"
-                   HeightRequest="70"
-                   Padding="12"
-                   CornerRadius="0"
-                   Margin="0,0,0,10"
-                   HorizontalOptions="Center">
-
-
-                <Picker x:Name="picker"
-                    
-                    Title="Odaberite tip vozila:"
-                        TextColor="DimGray"
-                           FontSize="18"
-                           FontAttributes="Bold"
-                           HorizontalOptions="Start"
-                           Margin="20,0,0,0">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>SUV</x:String>
-                            <x:String>Limuzina</x:String>
-                            <x:String>Karavan</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </Frame>
-
-            <!-- dodatna oprema -->
-
-            <Frame WidthRequest="360"
-                   HeightRequest="280"
+                   HeightRequest="180"
                    Padding="0"
                    CornerRadius="0"
                    Margin="0,0,0,10"
-                   HorizontalOptions="Center">
+            HorizontalOptions="Center">
 
                 <Grid RowSpacing="2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="AUTO"/>
                         <RowDefinition Height="AUTO"/>
-                        <RowDefinition Height="AUTO"/>
                     </Grid.RowDefinitions>
 
-                    <Label Text="Dodatna oprema:"
-                           Grid.Row="0"
+                    <Label Text="Tip vozila:"
                            TextColor="DimGray"
                            FontSize="18"
-                           Margin="0,14,0,10"
+                           Margin="0,14,0,0"
                            FontAttributes="Bold"
                            HorizontalOptions="Center"
                            />
@@ -177,52 +154,38 @@
                     <HorizontalStackLayout
                         HorizontalOptions="CenterAndExpand"
                         Spacing="10" Padding="6" Grid.Row="1">
-                        <Frame HorizontalOptions="Start" Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                        <Frame HorizontalOptions="Start" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
                             <VerticalStackLayout BackgroundColor="White">
-                                    <CheckBox Color="CornflowerBlue" x:Name="Activity1Checkbox" HorizontalOptions="Start"></CheckBox>
-                                    <Label Text="Navigacija" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                                <CheckBox Color="CornflowerBlue" x:Name="Category4Checkbox" HorizontalOptions="Start"
+                                CheckedChanged="CategoryCheckbox_CheckedChanged"
+                                BindingContext="Limuzina" />
+                                <Image Source="sedan.jpg" HeightRequest="30"></Image>
+                                <Label Text="Limuzina" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
                             </VerticalStackLayout>
                         </Frame>
-                        <Frame  Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                        <Frame HorizontalOptions="End" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
                             <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Activity2Checkbox" HorizontalOptions="Start"></CheckBox>
-                                 <Label Text="LED svjetla" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
+                                <CheckBox Color="CornflowerBlue" x:Name="Category5Checkbox" HorizontalOptions="Start"
+                                   CheckedChanged="CategoryCheckbox_CheckedChanged"
+                                    BindingContext="SUV" />
+                                <Image Source="suv.jpg" HeightRequest="30"></Image>
+                                <Label Text="SUV" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
                             </VerticalStackLayout>
                         </Frame>
-                        <Frame Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
+                        <Frame HorizontalOptions="End" Padding="8" CornerRadius="10" BorderColor="Gray" HeightRequest="112" WidthRequest="120">
                             <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Activity3Checkbox" HorizontalOptions="Start"></CheckBox>
-                                 <Label Text="Android Auto" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
-                            </VerticalStackLayout>
-                        </Frame>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout
-                        HorizontalOptions="CenterAndExpand"
-                        Spacing="10" Padding="6" Grid.Row="2">
-                        <Frame HorizontalOptions="Start" Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
-                            <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Activity4Checkbox" HorizontalOptions="Start"></CheckBox>
-                                <Label Text="Apple Carplay" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
-                            </VerticalStackLayout>
-                        </Frame>
-                        <Frame  Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
-                            <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Activity5Checkbox" HorizontalOptions="Start"></CheckBox>
-                                <Label Text="S-Line" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
-                            </VerticalStackLayout>
-                        </Frame>
-                        <Frame Padding="4" CornerRadius="10" BorderColor="Gray" HeightRequest="98" WidthRequest="100">
-                            <VerticalStackLayout BackgroundColor="White">
-                                <CheckBox Color="CornflowerBlue" x:Name="Activity6Checkbox" HorizontalOptions="Start"></CheckBox>
-                                <Image Source="skiing.png" HeightRequest="30"></Image>
-                                <Label Text="Nesto" FontSize="16" Padding="2" HorizontalTextAlignment="Center" TextColor="#32573c" ></Label>
+                                <CheckBox Color="CornflowerBlue" x:Name="Category6Checkbox" HorizontalOptions="Start"
+                                 CheckedChanged="CategoryCheckbox_CheckedChanged"
+                                    BindingContext="Karavan" />
+                                <Image Source="wagon.jpg" HeightRequest="30"></Image>
+                                <Label Text="Karavan" FontSize="18" Padding="9" HorizontalTextAlignment="Center" TextColor="#32573c"></Label>
                             </VerticalStackLayout>
                         </Frame>
                     </HorizontalStackLayout>
-
                 </Grid>
             </Frame>
+
+           
 
             <!-- udaljenost -->
             <Frame WidthRequest="360"
@@ -246,13 +209,14 @@
                 </VerticalStackLayout>
             </Frame>
 
-            <!-- Generate button -->
             <Button Text="GO"
-                    FontSize="20"
-                    BackgroundColor="CornflowerBlue"
-                    WidthRequest="130"
-                    Margin="0,20,0,20"
-                    CornerRadius="40"/>
+            FontSize="20"
+            BackgroundColor="CornflowerBlue"
+            WidthRequest="130"
+            Margin="0,20,0,20"
+            CornerRadius="40"
+            Clicked="GenerateCarsButton_Clicked"/>
+
 
         </VerticalStackLayout>
     </ScrollView>

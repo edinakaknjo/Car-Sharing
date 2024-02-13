@@ -38,6 +38,9 @@
     <MauiXaml Update="Views\RegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\ResultsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\SettingsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

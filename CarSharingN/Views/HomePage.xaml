@@ -26,7 +26,7 @@
         <Label Text="Dostupni:" Grid.Row="1" TextColor="DarkSlateGrey" FontSize="16"/>
 
         <!-- Scrollable list of Trips -->
-        <CollectionView ItemsSource="{Binding Automobil}" 
+        <CollectionView ItemsSource="{Binding Automobili}" 
                         Grid.Row="2"
                         Margin="0,18">
             <CollectionView.ItemsLayout>
@@ -69,8 +69,8 @@
                                 <Label Text="{Binding Location}"
                                        FontSize="15"
                                        Grid.Row="2"/>
-                                <!-- Duration -->
-                                <Label Text="{Binding Duration}"
+
+                                <Label Text="{Binding Fuel}"
                                        FontSize="16"
                                        Margin="4,2,0,0"
                                        Grid.Row="3"/>

@@ -191,3 +191,5 @@ C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.
 C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iphotobg.scale-100.jpg
 C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\location.scale-100.png
 C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bg1.scale-100.jpg
+C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CarSharingN.sourcelink.json
+C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\novasl.scale-100.jpg

@@ -1083,3 +1083,5 @@ C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-android\andr
 C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-android\android\assets\CommunityToolkit.Mvvm.pdb
 C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-android\android\assets\Firebase.Auth.dll
 C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-android\android\assets\Newtonsoft.Json.dll
+C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-android\resizetizer\r\drawable\novasl.jpg
+C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-android\CarSharingN.sourcelink.json

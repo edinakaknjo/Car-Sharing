@@ -232,6 +232,9 @@
     <AppxPackagedFile Include="C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-100.png">
       <PackagePath>mail.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\novasl.scale-100.jpg">
+      <PackagePath>novasl.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\source\repos\CarSharingN\CarSharingN\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pass.scale-100.png">
       <PackagePath>pass.scale-100.png</PackagePath>
     </AppxPackagedFile>

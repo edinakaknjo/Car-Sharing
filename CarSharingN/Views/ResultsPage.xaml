@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:CarSharingN.ViewModels"
+             xmlns:Models="clr-namespace:CarSharingN.Models"
+             x:Class="CarSharingN.Views.ResultsPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="bg1.jpg"
+             Title="ResultsPage">
+    <StackLayout>
+        <Label Text="Automobili za Vas:"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+
+        <ListView x:Name="filteredAutomobilsListView"
+                  HasUnevenRows="True"
+                  VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="Models:Automobil">
+                    <ViewCell>
+                        <Frame Padding="10" Margin="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="200" WidthRequest="350"/>
+
+                                <StackLayout Grid.Column="1" Padding="10">
+                                    <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Category}" FontSize="16" TextColor="CornflowerBlue" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Location}" FontSize="14"/>
+                                    <Label Text="{Binding Fuel}" FontSize="15" Margin="0,2,0,0"/>
+                                    <Frame Padding="10" Margin="0,12,0,0" HorizontalOptions="Start" BorderColor="CornflowerBlue" BackgroundColor="#d5e3d9">
+                                        <Label Text="{Binding Description}" TextColor="CornflowerBlue" FontSize="15"/>
+                                    </Frame>
+                                    <Button Text="More" BackgroundColor="#19000000" TextColor="White" WidthRequest="50" HeightRequest="50" FontSize="12"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
